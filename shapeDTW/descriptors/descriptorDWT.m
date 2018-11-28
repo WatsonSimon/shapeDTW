@@ -1,4 +1,5 @@
-
+% subsequence: input time serie 
+% param: 
 function rep =  descriptorDWT(subsequence, param)
     
     val_param = validateDWTdescriptorparam(param);    
@@ -15,14 +16,12 @@ function rep =  descriptorDWT(subsequence, param)
     else
         subsequence = [subsequence; mean(subsequence)*ones(newlen - seqlen,1)];
     end
-    
-        
+         
     selection = val_param.selection;
     numLevels = val_param.numLevels;
     n = val_param.n;
     
     [h,g] = wavecoef(selection,n);
-    
     
     cntLevels = 0;
     
@@ -44,7 +43,5 @@ function rep =  descriptorDWT(subsequence, param)
         w = cat(1, [sout; dout], w);
         rep = w';
         return;
-    end
-    
-    
+    end   
 end
