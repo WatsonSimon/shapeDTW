@@ -5,7 +5,7 @@ function rep =  descriptorDWT(subsequence, param)
     val_param = validateDWTdescriptorparam(param);    
     subsequence = subsequence(:);
     seqlen = length(subsequence);
-    % now only support subsequences withe length less than 1024
+    % now only support subsequences wit the length  is less than 1024
     refLens = 2.^(1:10);
     gaps = abs(refLens - seqlen);
     [~, idx] = min(gaps);
