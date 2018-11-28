@@ -2,8 +2,7 @@ function [distRaw,distDescriptor,lPath,match]  = ...
                         shapeDTWmulti(p,q, seqlen, descriptorSetting, metric)
 % since DTW doesn't have shape information, 
 % here we describer each point with its local shape, 
-% then the univariate time series p & q are transformed into multivariate
-% time series
+% then the univariate time series p & q are transformed into multivariate time series
     narginchk(3,5);
     if ~ismatrix(p) || ~ismatrix(q)
         error('only applicable to multivariate time series\n');
@@ -21,7 +20,6 @@ function [distRaw,distDescriptor,lPath,match]  = ...
     if ~exist('metric', 'var') || isempty(metric)
         metric = 'Euclidean';
     end
-    
 
     [lenp,~] = size(p);
     [lenq, dims] = size(q);
