@@ -142,6 +142,4 @@ function [distRaw,distDescriptor,lPath,match]  = ...
     
 %     distRaw = norm(wp - wq);
     distRaw = sum(sqrt((wp-wq).^2));
-    
-
 end
