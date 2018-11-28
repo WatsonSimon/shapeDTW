@@ -37,8 +37,7 @@ function [NNidxRaw, NNidxDescriptor, distsRaw, distsDescriptor] ...
     nTrain = numel(trainset);
     distsRaw = zeros(nTrain,1);  
 	distsDescriptor = zeros(nTrain,1);
-
-    
+   
     testTS = test(:);
     for i=1:nTrain
         trainTS = trainset{i};
@@ -53,6 +52,5 @@ function [NNidxRaw, NNidxDescriptor, distsRaw, distsDescriptor] ...
     end
     
     [~, NNidxRaw] = min(distsRaw);
-    [~, NNidxDescriptor] = min(distsDescriptor);
-    
+    [~, NNidxDescriptor] = min(distsDescriptor);    
 end
