@@ -1,9 +1,8 @@
 function [distRaw,distDescriptor,lPath,match]  = ...
                         shapeDTW(p,q, seqlen, descriptorSetting, metric)
 % since DTW doesn't have shape information, 
-% here we describer each point with its local shape, 
-% then the univariate time series p & q are transformed into multivariate
-% time series
+% here we describe each point with its local shape, 
+% then the univariate time series p & q are transformed into multivariate time series
     narginchk(3,5);
     if ~isvector(p) || ~isvector(q)
         error('Only support univariate time series\n');
