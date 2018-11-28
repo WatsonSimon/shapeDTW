@@ -1,8 +1,7 @@
 function [dRaw,dDescriptor,lPath,match]  = shapeDTW2(p,q, dp, dq, metric)
 % since DTW doesn't have shape information, 
 % here we describer each point with its local shape, 
-% then the univariate time series p & q are transformed into multivariate
-% time series
+% then the univariate time series p & q are transformed into multivariate time series
 
 % this one is different from 'shapeDTW' in the following aspect:
 % 'shapeDTW.m': shape descriptors are calculated within the function, while
@@ -21,7 +20,6 @@ function [dRaw,dDescriptor,lPath,match]  = shapeDTW2(p,q, dp, dq, metric)
         metric = 'Euclidean'; % metric = 'chi-square'; 
     end
     
-    
     p = p(:);
     q = q(:);
     lenp = length(p);
@@ -36,7 +34,7 @@ function [dRaw,dDescriptor,lPath,match]  = shapeDTW2(p,q, dp, dq, metric)
     
     %% (2) match multivariate time series 'p_descriptors' & 'q_descriptors'
     
-	% run DTW
+    % run DTW
     switch metric
         case 'Euclidean'
             d = dist2(p_descriptors, q_descriptors);
@@ -60,6 +58,4 @@ function [dRaw,dDescriptor,lPath,match]  = shapeDTW2(p,q, dp, dq, metric)
     
     %dRaw = norm(wp - wq);
 	dRaw = sum(sqrt((wp-wq).^2));
-    
-
 end
