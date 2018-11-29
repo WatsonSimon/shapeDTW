@@ -8,4 +8,4 @@ One similar algorithm is weighted-DTW, paper can be download from here: http://l
 
 The code was tested on UCR time series datasets.
 Go to this link: https://www.cs.ucr.edu/~eamonn/time_series_data_2018/
-to download the dataset, the password is "classify"
+to download the dataset, the password is "someone"
