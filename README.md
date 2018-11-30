@@ -4,7 +4,7 @@ This repository implements the algorithms proposed in paper: shapeDTW: shape Dyn
 A shape-embedded dynamic time warping (DTW) algorithm. 
 The shape descriptor can be HOG1, derivative, discrete wavelet transform (DWT), Piecewise aggregate approximation (PAA) or many others.
 
-This repo also implements the algorithm proposed in paper: Weighted dynamictimewarpingfortimeseriesclassification, Pattern Recognition, 2011.
+This repo also implements the algorithm proposed in paper: Weighted dynamic time warping for time series classification, Pattern Recognition, 2011.
 paper can be download from here: http://lig-membres.imag.fr/bisson/cours/M2INFO-AIW-ML/papers/Jeong11.pdf
 
 The code was tested on UCR time series datasets.
