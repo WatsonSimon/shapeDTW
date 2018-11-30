@@ -1,4 +1,4 @@
-# shapeDTW
+# shapeDTW and weightedDTW
 This repository implements the algorithms proposed in paper: shapeDTW: shape Dynamic Time Warping, Pattern Recognition.
 
 A shape-embedded dynamic time warping (DTW) algorithm. 
