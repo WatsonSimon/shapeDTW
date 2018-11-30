@@ -10,3 +10,5 @@ paper can be download from here: http://lig-membres.imag.fr/bisson/cours/M2INFO-
 The code was tested on UCR time series datasets.
 Go to this link: https://www.cs.ucr.edu/~eamonn/time_series_data_2018/
 to download the dataset, the password is "someone"
+
+The third algorithm is summative DTW, which is a variant of DTW applied in surgical skill evaluation in this paper: Evaluation of robotic surgery skills using dynamic time warping, Computer Methods and Programs in Biomedicine, 2017. https://doi.org/10.1016/j.cmpb.2017.09.007
